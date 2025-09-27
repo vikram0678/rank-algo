@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+}
+h1 {
+    text-align: center;
+}
+section {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+input, button {
+    margin: 5px;
+    padding: 5px;
+    width: 200px;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+#search-result-message {
+    color: red;
+    margin: 10px 0;
+}
+#ranked-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+#ranked-table th, #ranked-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+#ranked-table th {
+    background-color: #f2f2f2;
+}
