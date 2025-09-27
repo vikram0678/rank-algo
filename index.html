@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hire3x</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <h1>Hire3x Rank Matching</h1>
+    
+    <section id="candidate-section">
+        <h2>Upload Resume</h2>
+        <form id="resume-form">
+            <input type="number" id="resume-user-id" placeholder="User ID (e.g., 1)" required>
+            <input type="file" id="resume-file" accept=".pdf" required>
+            <button type="submit">Upload</button>
+        </form>
+        <p id="upload-result"></p>
+
+        <h2>Or Add Candidate Manually</h2>
+        <form id="manual-form">
+            <input type="text" id="manual-user-id" placeholder="User ID (e.g., 2)" required>
+            <input type="text" id="skills" placeholder="Skills (e.g., Python,Java)" required>
+            <input type="number" id="experience" placeholder="Years of Experience" required>
+            <button type="submit">Save</button>
+        </form>
+        <p id="manual-result"></p>
+    </section>
+
+    <section id="job-section">
+        <h2>Add Job Posting</h2>
+        <form id="job-form">
+            <input type="text" id="job-title" placeholder="Job Title (e.g., Java Developer)" required>
+            <input type="text" id="required-skills" placeholder="Required Skills (e.g., Java,Team Management)" required>
+            <button type="submit">Add Job</button>
+        </form>
+        <p id="job-result"></p>
+    </section>
+
+    <section id="interviewer-section">
+        <h2>Search Candidates</h2>
+        <input type="text" id="skills-input" placeholder="Skills (e.g., CSS, Java)">
+        <button onclick="searchCandidates()">Search</button>
+        <div id="search-result-message"></div>
+        <table id="ranked-table">
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Score</th>
+                    <th>Skills</th>
+                    <th>Summary</th>
+                </tr>
+            </thead>
+            <tbody id="ranked-list"></tbody>
+        </table>
+    </section>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
