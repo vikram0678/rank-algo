@@ -34,6 +34,3 @@ A web application for parsing resumes and ranking candidates based on their skil
 - `static/` - Static files (JS, CSS)
 - `index.html` - Web interface
 
-## License
-
-MIT
